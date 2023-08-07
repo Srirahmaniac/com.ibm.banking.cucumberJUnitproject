@@ -16,10 +16,6 @@ Scenario: Add new Customer
 	Then User can view confirmation message "The new customer has been added successfully." 
 	And close browser
 
-
-
-
-
 @regression
 Scenario: Search Customer by EMailID 
 	Given User Launch Chrome browser 

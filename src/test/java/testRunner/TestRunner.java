@@ -12,13 +12,19 @@ import cucumber.api.junit.Cucumber;
                     features = ".\\IBM_Features\\Login.feature" ,  
                     glue = "stepDefinition",
                     monochrome = true, 
-                    plugin = {"html: ibm_reports/TestResult.html"},
+                    //plugin = {"html: ibm_reports/TestResult.html"},
                    // tags = "@ibm_sanity"
-                    tags = "@ibm_regression"
+                    tags = {"@ibm_regression"},
                   //tags= {"@sanity"},
                    // tags= {"@regression"}
                     //tags= {"@positive"},
-                    //plugin= {"pretty","html: test-output"}
+                    plugin= {"pretty",
+                                    "html:target/ibm_CucumberReport.html",
+                                    "json:target/ibm_CucumberReport.json",
+                                    "junit:target/ibm_CucumberReport.xml"
+                                    
+                                    
+                                    }
         
         
                 )

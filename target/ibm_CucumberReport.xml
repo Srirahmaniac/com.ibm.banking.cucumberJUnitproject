@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="32.822535">
+    <testcase classname="Login functionality" name="Successful Login with Multiple User Credentials" time="23.833134">
+        <system-out><![CDATA[Given User Launch Chrome browser............................................passed
+When User opens URL "http://admin-demo.nopcommerce.com/login"...............passed
+And User enters Email as "admin@yourstore.com" and Password as "admin"......passed
+And Click on Login..........................................................passed
+Then Page Title should be "Dashboard / nopCommerce administration"..........passed
+When User click on Log out link.............................................passed
+Then Page Title should be "Your store. Login"...............................passed
+And close browser...........................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Login functionality" name="Successful Login with Multiple User Credentials 2" time="8.989401">
+        <failure message="java.lang.AssertionError: expected [Your store. Login] but found [Dashboard / nopCommerce administration]&#13;&#10;&#9;at org.testng.Assert.fail(Assert.java:111)&#13;&#10;&#9;at org.testng.Assert.failNotEquals(Assert.java:1578)&#13;&#10;&#9;at org.testng.Assert.assertEqualsImpl(Assert.java:150)&#13;&#10;&#9;at org.testng.Assert.assertEquals(Assert.java:132)&#13;&#10;&#9;at org.testng.Assert.assertEquals(Assert.java:656)&#13;&#10;&#9;at org.testng.Assert.assertEquals(Assert.java:666)&#13;&#10;&#9;at stepDefinition.LoginSteps.page_Title_should_be(LoginSteps.java:62)&#13;&#10;&#9;at ✽.Page Title should be &quot;Dashboard / nopCommerce administration&quot;(file:IBM_Features/Login.feature:23)&#13;&#10;"><![CDATA[Given User Launch Chrome browser............................................passed
+When User opens URL "http://admin-demo.nopcommerce.com/login"...............passed
+And User enters Email as "admin123@yourstore.com" and Password as "admin123".passed
+And Click on Login..........................................................passed
+Then Page Title should be "Dashboard / nopCommerce administration"..........failed
+When User click on Log out link.............................................skipped
+Then Page Title should be "Your store. Login"...............................skipped
+And close browser...........................................................skipped
+
+StackTrace:
+java.lang.AssertionError: expected [Your store. Login] but found [Dashboard / nopCommerce administration]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at stepDefinition.LoginSteps.page_Title_should_be(LoginSteps.java:62)
+	at ✽.Page Title should be "Dashboard / nopCommerce administration"(file:IBM_Features/Login.feature:23)
+]]></failure>
+    </testcase>
+</testsuite>
