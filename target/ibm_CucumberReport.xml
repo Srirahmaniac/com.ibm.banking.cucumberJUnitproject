@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="56.266767">
-    <testcase classname="Customers" name="Search Customer by EMailID" time="30.743996">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="57.757396">
+    <testcase classname="Customers" name="Search Customer by EMailID" time="31.726814">
         <system-out><![CDATA[Given User Launch Chrome browser............................................passed
 When User opens URL "http://admin-demo.nopcommerce.com/login"...............passed
 And User enters Email as "admin@yourstore.com" and Password as "admin"......passed
@@ -13,7 +13,7 @@ Then User should found Email in the Search table............................pass
 And close browser...........................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Customers" name="Search Customer by Name" time="25.522771">
+    <testcase classname="Customers" name="Search Customer by Name" time="26.030582">
         <system-out><![CDATA[Given User Launch Chrome browser............................................passed
 When User opens URL "http://admin-demo.nopcommerce.com/login"...............passed
 And User enters Email as "admin@yourstore.com" and Password as "admin"......passed

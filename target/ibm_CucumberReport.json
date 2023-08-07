@@ -3,8 +3,8 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2023-08-07T06:49:36.478Z",
-        "line": 20,
+        "start_timestamp": "2023-08-07T07:09:44.675Z",
+        "line": 19,
         "name": "Search Customer by EMailID",
         "description": "",
         "id": "customers;search-customer-by-emailid",
@@ -13,10 +13,10 @@
         "steps": [
           {
             "result": {
-              "duration": 4707350900,
+              "duration": 4914691899,
               "status": "passed"
             },
-            "line": 21,
+            "line": 20,
             "name": "User Launch Chrome browser",
             "match": {
               "location": "LoginSteps.openBrowser()"
@@ -25,10 +25,10 @@
           },
           {
             "result": {
-              "duration": 2090465600,
+              "duration": 2983020299,
               "status": "passed"
             },
-            "line": 22,
+            "line": 21,
             "name": "User opens URL \"http://admin-demo.nopcommerce.com/login\"",
             "match": {
               "arguments": [
@@ -43,10 +43,10 @@
           },
           {
             "result": {
-              "duration": 576315700,
+              "duration": 383355700,
               "status": "passed"
             },
-            "line": 23,
+            "line": 22,
             "name": "User enters Email as \"admin@yourstore.com\" and Password as \"admin\"",
             "match": {
               "arguments": [
@@ -65,10 +65,10 @@
           },
           {
             "result": {
-              "duration": 6128038900,
+              "duration": 6156616099,
               "status": "passed"
             },
-            "line": 24,
+            "line": 23,
             "name": "Click on Login",
             "match": {
               "location": "LoginSteps.click_on_Login()"
@@ -77,10 +77,10 @@
           },
           {
             "result": {
-              "duration": 3069387400,
+              "duration": 3165237399,
               "status": "passed"
             },
-            "line": 25,
+            "line": 24,
             "name": "User can view Dashboard",
             "match": {
               "location": "CustomersSteps.user_can_view_Dashboad()"
@@ -89,10 +89,10 @@
           },
           {
             "result": {
-              "duration": 1842605500,
+              "duration": 1754995700,
               "status": "passed"
             },
-            "line": 26,
+            "line": 25,
             "name": "User click on customers Menu",
             "match": {
               "location": "CustomersSteps.user_click_on_customers_Menu()"
@@ -101,10 +101,10 @@
           },
           {
             "result": {
-              "duration": 3238340100,
+              "duration": 3316168100,
               "status": "passed"
             },
-            "line": 27,
+            "line": 26,
             "name": "Enter customer eMail",
             "match": {
               "location": "CustomersSteps.enter_customer_EMail()"
@@ -113,10 +113,10 @@
           },
           {
             "result": {
-              "duration": 72473700,
+              "duration": 78248200,
               "status": "passed"
             },
-            "line": 28,
+            "line": 27,
             "name": "Click on search button",
             "match": {
               "location": "CustomersSteps.click_on_search_button()"
@@ -125,10 +125,10 @@
           },
           {
             "result": {
-              "duration": 3437123600,
+              "duration": 3260307699,
               "status": "passed"
             },
-            "line": 29,
+            "line": 28,
             "name": "User should found Email in the Search table",
             "match": {
               "location": "CustomersSteps.user_should_found_Email_in_the_Search_table()"
@@ -137,10 +137,10 @@
           },
           {
             "result": {
-              "duration": 5471377700,
+              "duration": 5600973000,
               "status": "passed"
             },
-            "line": 30,
+            "line": 29,
             "name": "close browser",
             "match": {
               "location": "LoginSteps.close_browser()"
@@ -155,8 +155,8 @@
         ]
       },
       {
-        "start_timestamp": "2023-08-07T06:50:07.238Z",
-        "line": 33,
+        "start_timestamp": "2023-08-07T07:10:16.435Z",
+        "line": 32,
         "name": "Search Customer by Name",
         "description": "",
         "id": "customers;search-customer-by-name",
@@ -165,10 +165,10 @@
         "steps": [
           {
             "result": {
-              "duration": 2860359800,
+              "duration": 3284236500,
               "status": "passed"
             },
-            "line": 34,
+            "line": 33,
             "name": "User Launch Chrome browser",
             "match": {
               "location": "LoginSteps.openBrowser()"
@@ -177,10 +177,10 @@
           },
           {
             "result": {
-              "duration": 2047792800,
+              "duration": 2832466600,
               "status": "passed"
             },
-            "line": 35,
+            "line": 34,
             "name": "User opens URL \"http://admin-demo.nopcommerce.com/login\"",
             "match": {
               "arguments": [
@@ -195,10 +195,10 @@
           },
           {
             "result": {
-              "duration": 754765400,
+              "duration": 401153299,
               "status": "passed"
             },
-            "line": 36,
+            "line": 35,
             "name": "User enters Email as \"admin@yourstore.com\" and Password as \"admin\"",
             "match": {
               "arguments": [
@@ -217,10 +217,10 @@
           },
           {
             "result": {
-              "duration": 5789137500,
+              "duration": 5362661200,
               "status": "passed"
             },
-            "line": 37,
+            "line": 36,
             "name": "Click on Login",
             "match": {
               "location": "LoginSteps.click_on_Login()"
@@ -229,10 +229,10 @@
           },
           {
             "result": {
-              "duration": 3047971600,
+              "duration": 3106587899,
               "status": "passed"
             },
-            "line": 38,
+            "line": 37,
             "name": "User can view Dashboard",
             "match": {
               "location": "CustomersSteps.user_can_view_Dashboad()"
@@ -241,10 +241,10 @@
           },
           {
             "result": {
-              "duration": 1987826900,
+              "duration": 1773595000,
               "status": "passed"
             },
-            "line": 39,
+            "line": 38,
             "name": "User click on customers Menu",
             "match": {
               "location": "CustomersSteps.user_click_on_customers_Menu()"
@@ -253,10 +253,10 @@
           },
           {
             "result": {
-              "duration": 181394900,
+              "duration": 274666000,
               "status": "passed"
             },
-            "line": 40,
+            "line": 39,
             "name": "Enter customer FirstName",
             "match": {
               "location": "CustomersSteps.enter_customer_FirstName()"
@@ -265,10 +265,10 @@
           },
           {
             "result": {
-              "duration": 163966500,
+              "duration": 155519699,
               "status": "passed"
             },
-            "line": 41,
+            "line": 40,
             "name": "Enter customer LastName",
             "match": {
               "location": "CustomersSteps.enter_customer_LastName()"
@@ -277,10 +277,10 @@
           },
           {
             "result": {
-              "duration": 85471800,
+              "duration": 95531200,
               "status": "passed"
             },
-            "line": 42,
+            "line": 41,
             "name": "Click on search button",
             "match": {
               "location": "CustomersSteps.click_on_search_button()"
@@ -289,10 +289,10 @@
           },
           {
             "result": {
-              "duration": 3166130700,
+              "duration": 3152728000,
               "status": "passed"
             },
-            "line": 43,
+            "line": 42,
             "name": "User should found Name in the Search table",
             "match": {
               "location": "CustomersSteps.user_should_found_Name_in_the_Search_table()"
@@ -301,10 +301,10 @@
           },
           {
             "result": {
-              "duration": 5423290900,
+              "duration": 5570261401,
               "status": "passed"
             },
-            "line": 44,
+            "line": 43,
             "name": "close browser",
             "match": {
               "location": "LoginSteps.close_browser()"

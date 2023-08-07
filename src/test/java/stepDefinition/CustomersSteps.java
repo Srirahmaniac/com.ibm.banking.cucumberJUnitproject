@@ -56,7 +56,7 @@ public class CustomersSteps{
 		
 	}
 
-	@When("Enter customer eMail")
+	@And("Enter customer eMail")
 	public void enter_customer_EMail() throws InterruptedException {
 	   
 		cp.searchByEnteringEmail(Constants.customer_mailId);

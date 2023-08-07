@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -46,7 +47,7 @@ public class LoginSteps {
         
     }
 
-    @When("Click on Login")
+    @And("Click on Login")
     public void click_on_Login() {
         
         driver.findElement(By.tagName("button")).click();
@@ -69,7 +70,7 @@ public class LoginSteps {
         
     }
 
-    @Then("close browser")
+    @And("close browser")
     public void close_browser() throws Exception {
         
         Thread.sleep(5000);

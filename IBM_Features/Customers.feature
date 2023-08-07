@@ -8,7 +8,6 @@ Scenario: Add new Customer
 	And Click on Login 
 	Then User can view Dashboard
 	When User click on customers Menu 
-	And click on customers Menu Item 
 	And click on Add new button 
 	Then User can view Add new customer page 
 	When User enter customer info 
