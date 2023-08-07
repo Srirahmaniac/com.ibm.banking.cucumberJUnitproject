@@ -11,10 +11,12 @@ public class CustomersTest extends BaseTest {
 		
 		
 	@Test
-    public void verifyCustomersFeature() throws Exception {
+    public void verifyCustomersSearchFeature() throws Exception {
 		
 		LoginPage lp = new LoginPage(driver);
 		CustomersPage cp = new CustomersPage(driver);
+		
+
         lp.enterEmail(Constants.username);
         lp.enterPassword(Constants.password);
         lp.clickReminderCheckbox();
@@ -22,7 +24,9 @@ public class CustomersTest extends BaseTest {
         lp.verifyApplicationTitle("Dashboard / nopCommerce administration");
         cp.clicksCustomersMenu();
         cp.verifyPageHeader("Customers");
-        cp.searchByEmail(Constants.customer_mailId);
+        cp.searchByEnteringEmail(Constants.customer_mailId);
+        cp.clicksOnSearchButton();
+        cp.scrollToSearchResult();
         cp.verifySearchResult(Constants.customer_name);
         
         

@@ -3,20 +3,20 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2023-08-07T03:34:28.954Z",
-        "line": 32,
-        "name": "Successful Login with Multiple User Credentials",
+        "start_timestamp": "2023-08-07T06:49:36.478Z",
+        "line": 20,
+        "name": "Search Customer by EMailID",
         "description": "",
-        "id": "login-functionality;successful-login-with-multiple-user-credentials;;2",
+        "id": "customers;search-customer-by-emailid",
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 4630645900,
+              "duration": 4707350900,
               "status": "passed"
             },
-            "line": 19,
+            "line": 21,
             "name": "User Launch Chrome browser",
             "match": {
               "location": "LoginSteps.openBrowser()"
@@ -25,10 +25,10 @@
           },
           {
             "result": {
-              "duration": 1819691900,
+              "duration": 2090465600,
               "status": "passed"
             },
-            "line": 20,
+            "line": 22,
             "name": "User opens URL \"http://admin-demo.nopcommerce.com/login\"",
             "match": {
               "arguments": [
@@ -43,10 +43,10 @@
           },
           {
             "result": {
-              "duration": 426946600,
+              "duration": 576315700,
               "status": "passed"
             },
-            "line": 21,
+            "line": 23,
             "name": "User enters Email as \"admin@yourstore.com\" and Password as \"admin\"",
             "match": {
               "arguments": [
@@ -65,10 +65,10 @@
           },
           {
             "result": {
-              "duration": 4070362400,
+              "duration": 6128038900,
               "status": "passed"
             },
-            "line": 22,
+            "line": 24,
             "name": "Click on Login",
             "match": {
               "location": "LoginSteps.click_on_Login()"
@@ -77,58 +77,70 @@
           },
           {
             "result": {
-              "duration": 3025371500,
+              "duration": 3069387400,
               "status": "passed"
             },
-            "line": 23,
-            "name": "Page Title should be \"Dashboard / nopCommerce administration\"",
+            "line": 25,
+            "name": "User can view Dashboard",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Dashboard / nopCommerce administration\"",
-                  "offset": 21
-                }
-              ],
-              "location": "LoginSteps.page_Title_should_be(String)"
+              "location": "CustomersSteps.user_can_view_Dashboad()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 1399631700,
+              "duration": 1842605500,
               "status": "passed"
             },
-            "line": 24,
-            "name": "User click on Log out link",
+            "line": 26,
+            "name": "User click on customers Menu",
             "match": {
-              "location": "LoginSteps.user_click_on_Log_out_link()"
+              "location": "CustomersSteps.user_click_on_customers_Menu()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 3012796300,
+              "duration": 3238340100,
               "status": "passed"
             },
-            "line": 25,
-            "name": "Page Title should be \"Your store. Login\"",
+            "line": 27,
+            "name": "Enter customer eMail",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Your store. Login\"",
-                  "offset": 21
-                }
-              ],
-              "location": "LoginSteps.page_Title_should_be(String)"
+              "location": "CustomersSteps.enter_customer_EMail()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 72473700,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "Click on search button",
+            "match": {
+              "location": "CustomersSteps.click_on_search_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3437123600,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "User should found Email in the Search table",
+            "match": {
+              "location": "CustomersSteps.user_should_found_Email_in_the_Search_table()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 5330707900,
+              "duration": 5471377700,
               "status": "passed"
             },
-            "line": 26,
+            "line": 30,
             "name": "close browser",
             "match": {
               "location": "LoginSteps.close_browser()"
@@ -138,25 +150,25 @@
         ],
         "tags": [
           {
-            "name": "@ibm_regression"
+            "name": "@regression"
           }
         ]
       },
       {
-        "start_timestamp": "2023-08-07T03:34:52.805Z",
+        "start_timestamp": "2023-08-07T06:50:07.238Z",
         "line": 33,
-        "name": "Successful Login with Multiple User Credentials",
+        "name": "Search Customer by Name",
         "description": "",
-        "id": "login-functionality;successful-login-with-multiple-user-credentials;;3",
+        "id": "customers;search-customer-by-name",
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 2540113800,
+              "duration": 2860359800,
               "status": "passed"
             },
-            "line": 19,
+            "line": 34,
             "name": "User Launch Chrome browser",
             "match": {
               "location": "LoginSteps.openBrowser()"
@@ -165,10 +177,10 @@
           },
           {
             "result": {
-              "duration": 1489827000,
+              "duration": 2047792800,
               "status": "passed"
             },
-            "line": 20,
+            "line": 35,
             "name": "User opens URL \"http://admin-demo.nopcommerce.com/login\"",
             "match": {
               "arguments": [
@@ -183,20 +195,20 @@
           },
           {
             "result": {
-              "duration": 399120300,
+              "duration": 754765400,
               "status": "passed"
             },
-            "line": 21,
-            "name": "User enters Email as \"admin123@yourstore.com\" and Password as \"admin123\"",
+            "line": 36,
+            "name": "User enters Email as \"admin@yourstore.com\" and Password as \"admin\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"admin123@yourstore.com\"",
+                  "val": "\"admin@yourstore.com\"",
                   "offset": 21
                 },
                 {
-                  "val": "\"admin123\"",
-                  "offset": 62
+                  "val": "\"admin\"",
+                  "offset": 59
                 }
               ],
               "location": "LoginSteps.user_enters_Email_as_and_Password_as(String,String)"
@@ -205,10 +217,10 @@
           },
           {
             "result": {
-              "duration": 1509488600,
+              "duration": 5789137500,
               "status": "passed"
             },
-            "line": 22,
+            "line": 37,
             "name": "Click on Login",
             "match": {
               "location": "LoginSteps.click_on_Login()"
@@ -217,59 +229,82 @@
           },
           {
             "result": {
-              "error_message": "java.lang.AssertionError: expected [Your store. Login] but found [Dashboard / nopCommerce administration]\r\n\tat org.testng.Assert.fail(Assert.java:111)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:1578)\r\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:150)\r\n\tat org.testng.Assert.assertEquals(Assert.java:132)\r\n\tat org.testng.Assert.assertEquals(Assert.java:656)\r\n\tat org.testng.Assert.assertEquals(Assert.java:666)\r\n\tat stepDefinition.LoginSteps.page_Title_should_be(LoginSteps.java:62)\r\n\tat ✽.Page Title should be \"Dashboard / nopCommerce administration\"(file:IBM_Features/Login.feature:23)\r\n",
-              "duration": 3028505700,
-              "status": "failed"
+              "duration": 3047971600,
+              "status": "passed"
             },
-            "line": 23,
-            "name": "Page Title should be \"Dashboard / nopCommerce administration\"",
+            "line": 38,
+            "name": "User can view Dashboard",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Dashboard / nopCommerce administration\"",
-                  "offset": 21
-                }
-              ],
-              "location": "LoginSteps.page_Title_should_be(String)"
+              "location": "CustomersSteps.user_can_view_Dashboad()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 459400,
-              "status": "skipped"
+              "duration": 1987826900,
+              "status": "passed"
             },
-            "line": 24,
-            "name": "User click on Log out link",
+            "line": 39,
+            "name": "User click on customers Menu",
             "match": {
-              "location": "LoginSteps.user_click_on_Log_out_link()"
+              "location": "CustomersSteps.user_click_on_customers_Menu()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 379500,
-              "status": "skipped"
+              "duration": 181394900,
+              "status": "passed"
             },
-            "line": 25,
-            "name": "Page Title should be \"Your store. Login\"",
+            "line": 40,
+            "name": "Enter customer FirstName",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Your store. Login\"",
-                  "offset": 21
-                }
-              ],
-              "location": "LoginSteps.page_Title_should_be(String)"
+              "location": "CustomersSteps.enter_customer_FirstName()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 163966500,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "Enter customer LastName",
+            "match": {
+              "location": "CustomersSteps.enter_customer_LastName()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 85471800,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "Click on search button",
+            "match": {
+              "location": "CustomersSteps.click_on_search_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3166130700,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "User should found Name in the Search table",
+            "match": {
+              "location": "CustomersSteps.user_should_found_Name_in_the_Search_table()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 211300,
-              "status": "skipped"
+              "duration": 5423290900,
+              "status": "passed"
             },
-            "line": 26,
+            "line": 44,
             "name": "close browser",
             "match": {
               "location": "LoginSteps.close_browser()"
@@ -279,16 +314,16 @@
         ],
         "tags": [
           {
-            "name": "@ibm_regression"
+            "name": "@regression"
           }
         ]
       }
     ],
-    "name": "Login functionality",
+    "name": "Customers",
     "description": "",
-    "id": "login-functionality",
+    "id": "customers",
     "keyword": "Feature",
-    "uri": "file:IBM_Features/Login.feature",
+    "uri": "file:IBM_Features/Customers.feature",
     "tags": []
   }
 ]

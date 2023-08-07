@@ -1,83 +1,16 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:IBM_Features/Login.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:IBM_Features/Customers.feature");
 formatter.feature({
-  "name": "Login functionality",
+  "name": "Customers",
   "description": "",
   "keyword": "Feature"
 });
-formatter.scenarioOutline({
-  "name": "Successful Login with Multiple User Credentials",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@ibm_regression"
-    }
-  ]
-});
-formatter.step({
-  "name": "User Launch Chrome browser",
-  "keyword": "Given "
-});
-formatter.step({
-  "name": "User opens URL \"http://admin-demo.nopcommerce.com/login\"",
-  "keyword": "When "
-});
-formatter.step({
-  "name": "User enters Email as \"\u003cemail\u003e\" and Password as \"\u003cpass\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "Click on Login",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "Page Title should be \"Dashboard / nopCommerce administration\"",
-  "keyword": "Then "
-});
-formatter.step({
-  "name": "User click on Log out link",
-  "keyword": "When "
-});
-formatter.step({
-  "name": "Page Title should be \"Your store. Login\"",
-  "keyword": "Then "
-});
-formatter.step({
-  "name": "close browser",
-  "keyword": "And "
-});
-formatter.examples({
-  "name": "",
-  "description": "",
-  "keyword": "Examples",
-  "rows": [
-    {
-      "cells": [
-        "email",
-        "pass"
-      ]
-    },
-    {
-      "cells": [
-        "admin@yourstore.com",
-        "admin"
-      ]
-    },
-    {
-      "cells": [
-        "admin123@yourstore.com",
-        "admin123"
-      ]
-    }
-  ]
-});
 formatter.scenario({
-  "name": "Successful Login with Multiple User Credentials",
+  "name": "Search Customer by EMailID",
   "description": "",
-  "keyword": "Scenario Outline",
+  "keyword": "Scenario",
   "tags": [
     {
-      "name": "@ibm_regression"
+      "name": "@regression"
     }
   ]
 });
@@ -122,31 +55,51 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Page Title should be \"Dashboard / nopCommerce administration\"",
+  "name": "User can view Dashboard",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "LoginSteps.page_Title_should_be(String)"
+  "location": "CustomersSteps.user_can_view_Dashboad()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User click on Log out link",
+  "name": "User click on customers Menu",
   "keyword": "When "
 });
 formatter.match({
-  "location": "LoginSteps.user_click_on_Log_out_link()"
+  "location": "CustomersSteps.user_click_on_customers_Menu()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Page Title should be \"Your store. Login\"",
+  "name": "Enter customer eMail",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "CustomersSteps.enter_customer_EMail()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on search button",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "CustomersSteps.click_on_search_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User should found Email in the Search table",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "LoginSteps.page_Title_should_be(String)"
+  "location": "CustomersSteps.user_should_found_Email_in_the_Search_table()"
 });
 formatter.result({
   "status": "passed"
@@ -162,12 +115,12 @@ formatter.result({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "Successful Login with Multiple User Credentials",
+  "name": "Search Customer by Name",
   "description": "",
-  "keyword": "Scenario Outline",
+  "keyword": "Scenario",
   "tags": [
     {
-      "name": "@ibm_regression"
+      "name": "@regression"
     }
   ]
 });
@@ -192,7 +145,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User enters Email as \"admin123@yourstore.com\" and Password as \"admin123\"",
+  "name": "User enters Email as \"admin@yourstore.com\" and Password as \"admin\"",
   "keyword": "And "
 });
 formatter.match({
@@ -212,35 +165,64 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Page Title should be \"Dashboard / nopCommerce administration\"",
+  "name": "User can view Dashboard",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "LoginSteps.page_Title_should_be(String)"
+  "location": "CustomersSteps.user_can_view_Dashboad()"
 });
 formatter.result({
-  "error_message": "java.lang.AssertionError: expected [Your store. Login] but found [Dashboard / nopCommerce administration]\r\n\tat org.testng.Assert.fail(Assert.java:111)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:1578)\r\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:150)\r\n\tat org.testng.Assert.assertEquals(Assert.java:132)\r\n\tat org.testng.Assert.assertEquals(Assert.java:656)\r\n\tat org.testng.Assert.assertEquals(Assert.java:666)\r\n\tat stepDefinition.LoginSteps.page_Title_should_be(LoginSteps.java:62)\r\n\tat ✽.Page Title should be \"Dashboard / nopCommerce administration\"(file:IBM_Features/Login.feature:23)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
-  "name": "User click on Log out link",
+  "name": "User click on customers Menu",
   "keyword": "When "
 });
 formatter.match({
-  "location": "LoginSteps.user_click_on_Log_out_link()"
+  "location": "CustomersSteps.user_click_on_customers_Menu()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
-  "name": "Page Title should be \"Your store. Login\"",
+  "name": "Enter customer FirstName",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "CustomersSteps.enter_customer_FirstName()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Enter customer LastName",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "CustomersSteps.enter_customer_LastName()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on search button",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "CustomersSteps.click_on_search_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User should found Name in the Search table",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "LoginSteps.page_Title_should_be(String)"
+  "location": "CustomersSteps.user_should_found_Name_in_the_Search_table()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "close browser",
@@ -250,6 +232,6 @@ formatter.match({
   "location": "LoginSteps.close_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 });

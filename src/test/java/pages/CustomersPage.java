@@ -1,5 +1,9 @@
 package pages;
 
+import java.util.List;
+
+import org.apache.velocity.runtime.directive.Foreach;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -24,10 +28,10 @@ public class CustomersPage {
 	// Identifications
 	
 	@FindBy(xpath = ".//li[@class='nav-item has-treeview']/a//*[contains(text(),'Customers')]")
-	WebElement rootlink_Customers;
+	WebElement parentlink_Customers;
 	
 	@FindBy(xpath = "(.//li[@class='nav-item']/a//*[contains(text(),'Customers')])[position()=1]")
-	WebElement sublink_Customers;
+	WebElement childlink_Customers;
 	
 	@FindBy(xpath = "//h1[contains(text(),'Customers')]")
 	WebElement txt_pageHeader;
@@ -42,17 +46,23 @@ public class CustomersPage {
 	WebElement table_columnHeaders;
 	
 	@FindBy(xpath = "//div[@class='dataTables_scrollBody']/table//tbody/tr/td")
-	WebElement table_filteredRecords;
+	WebElement table_filteredCustomer;
 	
 	@FindBy(css = "div#customers-grid_info")
-	WebElement scroll_page;
+	WebElement scrollPage_toCustomerTable;
+	
+	@FindBy(css = "input#SearchFirstName")
+	WebElement txt_SearchFirstName;
+	
+	@FindBy(css = "input#SearchLastName")
+	WebElement txt_SearchLastName;
 	
 	// Methods/Action
 	
 	public void clicksCustomersMenu() {
 		
 		Actions action = new Actions(driver);
-		action.click(rootlink_Customers).click(sublink_Customers).build().perform();
+		action.click(parentlink_Customers).click(childlink_Customers).build().perform();
 	}
 	
 	public void verifyPageHeader(String expectedTitle) throws InterruptedException {
@@ -62,23 +72,60 @@ public class CustomersPage {
 		
 	}
 	
-	public void searchByEmail(String email) throws InterruptedException {
+	public void searchByEnteringEmail(String email) throws InterruptedException {
 		
 		txt_emailSearchBox.clear();
 		txt_emailSearchBox.sendKeys(email);
 		Thread.sleep(3000);
+		
+		
+	}
+	
+	public void clicksOnSearchButton() {
+		
 		btn_search.click();
-		
 	}
 	
 	
-	public void verifySearchResult(String SearchNames) {
+	public void verifySearchResult(String SearchByElement) throws InterruptedException {
 		
+		List<WebElement> customerdetails = driver.findElements(By.xpath("//div[@class='dataTables_scrollBody']/table//tbody/tr/td"));
+		
+		for(WebElement detail : customerdetails) {
+			
+			if(detail.getText().equalsIgnoreCase(SearchByElement)) {
+				
+				int indexOfElement = customerdetails.indexOf(detail);
+				
+				System.out.println("Index Of Element in records is " + indexOfElement);
+				
+				System.out.println("Element found in records is " + SearchByElement);
+			}
+			
+		}
+	}
+	
+	public void scrollToSearchResult() throws InterruptedException {
+		
+		Thread.sleep(3000);
 		JavascriptExecutor  js = (JavascriptExecutor) driver; 
-		js.executeScript("arguments[0].scrollIntoView()", scroll_page);
+		js.executeScript("arguments[0].scrollIntoView()", scrollPage_toCustomerTable);
+		
 		
 	}
 	
+	public void enterCustomerFirstName(String firstName) {
+		
+		txt_SearchFirstName.clear();
+		txt_SearchFirstName.sendKeys(firstName);
+		
+	}
 	
+	public void enterCustomerLastName(String lastName) {
+		
+		txt_SearchLastName.clear();
+		txt_SearchLastName.sendKeys(lastName);
+		
+	}
 	
 }

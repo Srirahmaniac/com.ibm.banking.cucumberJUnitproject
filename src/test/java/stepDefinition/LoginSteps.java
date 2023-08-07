@@ -14,7 +14,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class LoginSteps {
 
-    WebDriver driver;
+   static WebDriver driver;
     
     @Given("User Launch Chrome browser")
     public void openBrowser() {
@@ -23,8 +23,6 @@ public class LoginSteps {
         driver = new ChromeDriver();
         
         driver.manage().window().maximize();
-        
-        
         
     }
 

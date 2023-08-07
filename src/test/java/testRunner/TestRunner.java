@@ -9,12 +9,12 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions( 
         
         
-                    features = ".\\IBM_Features\\Login.feature" ,  
+                    features = ".\\IBM_Features\\Customers.feature" ,  
                     glue = "stepDefinition",
                     monochrome = true, 
                     //plugin = {"html: ibm_reports/TestResult.html"},
                    // tags = "@ibm_sanity"
-                    tags = {"@ibm_regression"},
+                    tags = {"@regression"},
                   //tags= {"@sanity"},
                    // tags= {"@regression"}
                     //tags= {"@positive"},
