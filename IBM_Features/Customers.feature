@@ -1,7 +1,5 @@
 Feature: Customers 
 
-
-
 @sanity
 Scenario: Add new Customer 
 	Given User Launch Chrome browser 

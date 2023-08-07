@@ -8,6 +8,7 @@ public class Constants {
     public static final String username = "admin@yourstore.com";
     public static final String password = "admin";
     public static final String api_key = "";
-    public static final String customers_name = "victoria_victoria@nopCommerce.com";
+    public static final String customer_mailId = "victoria_victoria@nopCommerce.com";
+    public static final String customer_name = "Victoria Terces";
    
 }

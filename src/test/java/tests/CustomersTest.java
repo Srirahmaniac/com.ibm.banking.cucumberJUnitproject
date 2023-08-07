@@ -22,8 +22,8 @@ public class CustomersTest extends BaseTest {
         lp.verifyApplicationTitle("Dashboard / nopCommerce administration");
         cp.clicksCustomersMenu();
         cp.verifyPageHeader("Customers");
-        cp.searchByEmail(Constants.customers_name);
-        cp.verifySearchResult("Victoria Terces");
+        cp.searchByEmail(Constants.customer_mailId);
+        cp.verifySearchResult(Constants.customer_name);
         
         
     }

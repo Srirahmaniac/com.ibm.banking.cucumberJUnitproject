@@ -13,7 +13,8 @@ import cucumber.api.junit.Cucumber;
                     glue = "stepDefinition",
                     monochrome = true, 
                     plugin = {"html: ibm_reports/TestResult.html"},
-                    tags = "@ibm_sanity"
+                   // tags = "@ibm_sanity"
+                    tags = "ibm_regression"
                   //tags= {"@sanity"},
                    // tags= {"@regression"}
                     //tags= {"@positive"},
